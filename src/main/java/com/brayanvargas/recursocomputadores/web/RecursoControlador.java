@@ -26,7 +26,7 @@ public class RecursoControlador {
         return computadorRespositorio.getAll();
     }
 
-    @GetMapping
+    @GetMapping("/computador/{marca}")
     public List<Computador> getByMarca(@PathVariable String marca){
         return computadorRespositorio.getAllByMarca(marca);
     }
